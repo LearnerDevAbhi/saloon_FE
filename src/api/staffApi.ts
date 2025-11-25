@@ -2,7 +2,7 @@ import { baseApi } from './baseApi';
 import type { StaffMember } from '../types/common';
 
 interface StaffPayload {
-  userId: string;
+  createdBy: string;
   role: string;
   name?: string;
   email?: string;
