@@ -4,6 +4,7 @@ import type { RootState } from '../app/store';
 import { setCredentials, logout, selectRefreshToken } from '../features/auth/authSlice';
 import type { AuthResponse } from '../features/auth/types';
 
+console.log("Meta env VITE_API_URL",import.meta.env)
 const baseUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:3000/api';
 
 const rawBaseQuery = fetchBaseQuery({
