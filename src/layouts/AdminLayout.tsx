@@ -1,7 +1,7 @@
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Button } from '../components/common/Button';
-import { selectCurrentUser, logout } from '../features/auth/authSlice';
+import { logout } from '../features/auth/authSlice';
 import SiteFooter from '../components/common/SiteFooter';
 
 const links = [
